@@ -1,151 +1,615 @@
-# Power Transformer
+# Power Transformer – Complete Study Notes
 
-A **Power Transformer** is a static electrical machine used to transfer alternating current (AC) electrical energy from one voltage level to another without changing the frequency. In substations such as **Kunnamkulam Substation**, its primary function is to step down high transmission voltages (e.g., **220 kV**) to lower distribution voltages (e.g., **110 kV** or **33 kV**) for safe and efficient power delivery.
+## 1. Introduction to Power Transformers
 
----
+A **transformer** is a static electrical machine used to transfer electrical energy from one AC circuit to another through **electromagnetic induction**. It increases or decreases voltage levels without changing the frequency.
 
-## 1. Working Principle
+### Importance
 
-Power transformers operate based on **Faraday’s Law of Electromagnetic Induction** and **Mutual Induction**.
+* Essential for power transmission and distribution.
+* Enables power stations to be located far from consumers.
+* Operates at very high voltages and power levels.
+* One of the most efficient electrical machines because it has no rotating parts.
 
-```text
-Primary Winding (220 kV)
-          │
-          ▼
-Creates Alternating Magnetic Flux
-          │
-          ▼
-      Iron Core
-          │
-          ▼
-Secondary Winding (110 kV)
-```
+### Characteristics
 
-### Operation
-
-1. **Primary Winding**
-
-   * High-voltage AC power enters the primary winding.
-   * The alternating current produces a continuously changing magnetic field.
-
-2. **Magnetic Core**
-
-   * The laminated iron core guides the magnetic flux from the primary winding to the secondary winding.
-
-3. **Electromagnetic Induction**
-
-   * The changing magnetic field cuts across the secondary winding.
-   * This induces an AC voltage in the secondary winding.
-
-4. **Voltage Transformation**
-
-   * The output voltage depends on the turns ratio of the windings.
-   * More turns on the secondary winding increase voltage.
-   * Fewer turns on the secondary winding decrease voltage.
+* Static machine (no moving parts except OLTC mechanism).
+* No friction or windage losses.
+* Works only with AC supply.
+* Frequency remains unchanged.
 
 ---
 
-## 2. Internal and Structural Components
+# 2. Principle of Operation
 
-### Windings and Core
+## Electromagnetic Induction
 
-* The transformer core is made of **Cold Rolled Grain Oriented (CRGO) Silicon Steel** to minimize energy losses.
-* Copper windings are insulated with special insulating paper to prevent short circuits.
+When magnetic flux linking a coil changes, a voltage is induced in that coil.
 
-### Main Tank
+### Factors Affecting Induced Voltage
 
-* A sealed steel tank that houses the core and windings.
-* Filled with insulating mineral oil.
+* Number of turns in the coil.
+* Strength of magnetic field.
+* Rate of change of magnetic flux.
 
-### Transformer Oil (Mineral Oil)
+### Important Point
 
-The oil serves two important functions:
+A changing magnetic field is necessary.
 
-* **Electrical Insulation:** Prevents internal arcing and short circuits.
-* **Cooling Medium:** Transfers heat away from the windings and core.
-
-### Bushings
-
-* Porcelain or composite insulated sleeves mounted on the transformer.
-* Allow high-voltage conductors to pass safely through the grounded tank.
+* DC supply → Constant magnetic field → No induction.
+* AC supply → Alternating magnetic field → Voltage induced.
 
 ---
 
-## 3. Cooling and Auxiliary Systems
+## Mutual Induction
 
-Power transformers generate significant heat during operation. Efficient cooling is essential to maintain reliability and insulation life.
+When AC current flows through one coil:
 
-### Radiators and Cooling Fans
+1. Alternating magnetic field is produced.
+2. Magnetic flux links another nearby coil.
+3. Voltage is induced in the second coil.
 
-* Hot oil rises naturally from the transformer tank.
-* The oil flows through external radiator panels where heat is dissipated.
-* Cooling fans force air over the radiators to improve heat removal.
-
-**Cooling Method:** ONAF (Oil Natural Air Forced)
-
-### Conservator Tank
-
-* Mounted above the main transformer tank.
-* Accommodates expansion and contraction of transformer oil due to temperature changes.
-* Ensures the main tank remains completely filled with oil.
-
-### Silica Gel Breather
-
-* Connected to the conservator tank.
-* Removes moisture from incoming air using silica gel crystals.
-* Protects transformer oil from contamination and loss of insulating properties.
-
-### Tap Changer
-
-* Adjusts the number of active winding turns.
-* Maintains stable output voltage despite fluctuations in the incoming supply voltage.
+This phenomenon is called **Mutual Induction**, which is the working principle of a transformer.
 
 ---
 
-## 4. Protection Devices
+# 3. Construction of a Transformer
 
-Power transformers are valuable assets and are equipped with multiple protection systems to detect faults and prevent catastrophic failures.
+### Main Components
 
-### Buchholz Relay
+* Primary Winding
+* Secondary Winding
+* Magnetic Core
 
-* Installed between the main tank and conservator tank.
-* Detects gas formation caused by internal faults.
+### Windings
 
-**Functions:**
+The windings are made of:
 
-* Slow gas accumulation → Alarm signal.
-* Sudden gas surge → Trips circuit breakers and isolates the transformer.
+* Copper conductors
+* Insulated with varnish, enamel, or paper insulation
 
-### Pressure Relief Device (Explosion Vent)
+Purpose:
 
-* Protects the transformer from excessive internal pressure.
-* Operates during severe internal faults.
-* Releases pressure safely and prevents tank rupture or explosion.
-
----
-
-## Key Functions of a Power Transformer
-
-* Voltage step-up or step-down without changing frequency.
-* Electrical isolation between circuits.
-* Efficient transmission and distribution of electrical power.
-* Reliable operation through advanced cooling and protection systems.
+* Prevent short circuits between turns.
+* Ensure proper current flow.
 
 ---
 
-## Typical Transformer Ratings in Substations
+# 4. Transformer Core
 
-| Parameter         | Example Value      |
-| ----------------- | ------------------ |
-| Primary Voltage   | 220 kV             |
-| Secondary Voltage | 110 kV / 33 kV     |
-| Frequency         | 50 Hz              |
-| Cooling Method    | ONAF               |
-| Insulating Medium | Mineral Oil        |
-| Core Material     | CRGO Silicon Steel |
+The core is made of:
+
+* Iron
+* Silicon steel
+* Other ferromagnetic materials
+
+### Functions
+
+* Provides a low reluctance path for magnetic flux.
+* Improves magnetic coupling between windings.
+* Increases transformer efficiency.
 
 ---
 
-## Summary
+## Leakage Flux and Linkage Flux
 
-A power transformer is one of the most critical components in a power substation. It uses electromagnetic induction to transfer electrical energy between voltage levels while maintaining the same frequency. To ensure safe and reliable operation, transformers are equipped with cooling systems, oil insulation, voltage regulation mechanisms, and multiple protection devices such as the Buchholz Relay and Pressure Relief Device.
+### Linkage Flux
+
+Magnetic flux produced by the primary winding that links the secondary winding.
+
+### Leakage Flux
+
+Magnetic flux that does not link the secondary winding.
+
+### Importance
+
+* Linkage Flux → Useful
+* Leakage Flux → Energy loss
+
+Leakage flux should be minimized.
+
+---
+
+# 5. Eddy Current and Laminated Core
+
+### Eddy Current
+
+Alternating magnetic flux induces currents within the core material.
+
+These circulating currents are called **Eddy Currents**.
+
+### Effects
+
+* Heat generation
+* Energy loss
+* Reduced efficiency
+
+---
+
+## Laminated Core
+
+Instead of a solid core, thin insulated steel sheets are used.
+
+### Advantages
+
+* Reduces eddy current paths.
+* Increases resistance to eddy currents.
+* Minimizes energy loss.
+* Improves efficiency.
+
+---
+
+# 6. Energy Transfer in Transformer
+
+A transformer:
+
+❌ Does NOT convert electrical energy into another form.
+
+✅ Transfers electrical energy from one voltage level to another.
+
+---
+
+# 7. Transformation Ratio
+
+Relationship between primary and secondary voltages:
+
+\frac{V_s}{V_p}=\frac{N_s}{N_p}
+
+Where:
+
+* (V_p) = Primary Voltage
+* (V_s) = Secondary Voltage
+* (N_p) = Primary Turns
+* (N_s) = Secondary Turns
+
+---
+
+# 8. Step-Up Transformer
+
+### Condition
+
+Secondary turns > Primary turns
+
+### Result
+
+* Output voltage increases.
+* Output current decreases.
+
+### Application
+
+Used in transmission systems for long-distance power transfer.
+
+---
+
+# 9. Step-Down Transformer
+
+### Condition
+
+Primary turns > Secondary turns
+
+### Result
+
+* Output voltage decreases.
+* Output current increases.
+
+### Application
+
+Used in substations and distribution systems.
+
+---
+
+# 10. Transformer Frequency
+
+### Important Rule
+
+A transformer changes:
+
+* Voltage
+* Current
+
+But it does NOT change:
+
+* Frequency
+
+Example:
+
+* Input = 50 Hz
+* Output = 50 Hz
+
+---
+
+# 11. Transformer Tappings
+
+A **tap** is a connection point on the winding.
+
+### Purpose
+
+* Adjust transformation ratio.
+* Control output voltage.
+* Compensate for load variations.
+
+---
+
+# 12. Types of Transformers
+
+## A. Core Type Transformer
+
+### Features
+
+* Windings surround the core.
+* Simple construction.
+* Easy cooling.
+
+---
+
+## B. Shell Type Transformer
+
+### Features
+
+* Core surrounds most of the windings.
+* Better mechanical protection.
+* Compact structure.
+
+### Difference
+
+Only the physical arrangement differs; working principle remains the same.
+
+---
+
+# 13. Single-Phase Transformer
+
+### Features
+
+* Operates on single-phase AC supply.
+* Usually used for domestic distribution.
+
+### Output
+
+Typically:
+
+* 120 V
+* 240 V
+
+### Installation
+
+* Pole-mounted distribution transformers.
+
+---
+
+# 14. Three-Phase Transformer
+
+### Features
+
+* Operates on three-phase supply.
+* Three phases separated by 120°.
+
+### Advantages
+
+* Higher efficiency.
+* Suitable for large power transfer.
+* Used in substations and generating stations.
+
+### Power Rating
+
+Can reach hundreds of MVA.
+
+---
+
+# 15. Power Transformer Core
+
+### Construction
+
+* Thousands of laminated silicon steel sheets.
+* Sheets tightly clamped together.
+
+### Reason
+
+Reduces:
+
+* Noise
+* Vibration
+* Core losses
+
+---
+
+# 16. Winding Arrangement
+
+### Insulation Cylinder
+
+Placed between:
+
+* Core
+* Windings
+
+### Purpose
+
+* Electrical insulation.
+* Mechanical protection.
+
+---
+
+## Placement of Windings
+
+### LV Winding
+
+Placed nearest to core because:
+
+* Lower voltage
+* Easier insulation
+
+### HV Winding
+
+Placed outside LV winding because:
+
+* Requires greater insulation.
+
+---
+
+# 17. Axial and Radial Spacers
+
+Made from:
+
+* Pressboard
+* Epoxy resin
+* Composite insulating materials
+
+### Functions
+
+* Maintain spacing.
+* Allow oil circulation.
+* Improve cooling.
+* Prevent winding deformation.
+* Enhance insulation.
+
+---
+
+# 18. Conductors Used in Windings
+
+### Material
+
+Copper
+
+### Reasons
+
+* High conductivity
+* High mechanical strength
+* Good reliability
+
+---
+
+## Rectangular Conductors
+
+Used in large transformers because:
+
+* Better space utilization.
+* Greater mechanical stability.
+
+---
+
+# 19. Insulation of Windings
+
+### Small Transformers
+
+* Varnish coating
+* Enamel coating
+
+### Power Transformers
+
+* Paper insulation
+
+### Advantages of Paper Insulation
+
+* Better dielectric strength.
+* Higher temperature tolerance.
+* Improved mechanical strength.
+
+---
+
+# 20. Low Voltage (LV) Winding
+
+### Characteristics
+
+* Low voltage
+* High current
+* Fewer turns
+
+### Winding Type
+
+Helical Winding
+
+### Features
+
+* Suitable for high current applications.
+* Uses thick conductors.
+
+---
+
+# 21. Continuously Transposed Conductor (CTC)
+
+A CTC consists of multiple insulated strands.
+
+### Purpose
+
+* Reduce eddy current losses.
+* Prevent circulating currents.
+* Improve efficiency.
+
+---
+
+# 22. High Voltage (HV) Winding
+
+### Characteristics
+
+* High voltage
+* Low current
+* More turns
+
+### Winding Type
+
+Continuous Disc Winding
+
+### Advantages
+
+* Uniform voltage distribution.
+* Reduced insulation stress.
+* Lower risk of insulation failure.
+
+---
+
+# 23. Star and Delta Connections
+
+Transformer windings can be connected as:
+
+### Star (Y)
+
+* Neutral available.
+* Better for distribution systems.
+
+### Delta (Δ)
+
+* No neutral.
+* Better fault tolerance.
+
+---
+
+# 24. On-Load Tap Changer (OLTC)
+
+Used for changing transformer taps while energized.
+
+### Functions
+
+* Maintains output voltage.
+* Adjusts transformation ratio under load.
+
+### Main Components
+
+1. Tap Selector
+2. Diverter Switch
+3. Motor Drive Unit
+
+---
+
+# 25. Transformer Tank
+
+The transformer core, windings, and OLTC are enclosed inside a sealed tank.
+
+### Functions
+
+* Mechanical protection.
+* Oil containment.
+* Cooling arrangement.
+
+---
+
+# 26. Transformer Bushings
+
+Bushings allow conductors to pass safely through the transformer tank.
+
+---
+
+## Low Voltage Bushings
+
+### Type
+
+Porcelain Bushings
+
+### Construction
+
+* Central conductor
+* Porcelain insulator
+
+---
+
+## High Voltage Bushings
+
+### Types
+
+* Oil Impregnated Condenser Bushing (OIP)
+* Resin Impregnated Condenser Bushing (RIP)
+
+### Features
+
+* Handles very high voltage.
+* Uniform voltage distribution.
+* High dielectric strength.
+
+---
+
+# 27. Transformer Oil
+
+Transformer oil is a highly refined insulating mineral oil.
+
+### Functions
+
+## Insulation
+
+* Prevents electrical breakdown.
+* Provides dielectric strength.
+
+## Cooling
+
+* Absorbs heat from windings.
+* Transfers heat to cooling surfaces.
+
+---
+
+# 28. Conservator Tank
+
+A smaller tank connected above the main tank.
+
+### Functions
+
+* Stores excess oil.
+* Compensates for oil expansion and contraction.
+* Maintains proper oil level.
+
+---
+
+# 29. Importance of Transformer Oil
+
+Transformer oil is extremely important because:
+
+* Provides insulation.
+* Provides cooling.
+* Prevents flashover.
+* Extends transformer life.
+
+### Oil Shortage Can Cause
+
+* Overheating
+* Insulation failure
+* Transformer breakdown
+
+---
+
+# Quick Exam Revision (1 Minute)
+
+**Transformer = Static machine that transfers AC power between circuits using electromagnetic induction.**
+
+**Core → Provides magnetic path**
+
+**Windings → Primary & Secondary**
+
+**Step-Up → Voltage ↑ Current ↓**
+
+**Step-Down → Voltage ↓ Current ↑**
+
+**Frequency → Unchanged**
+
+**Laminated Core → Reduces Eddy Current Losses**
+
+**LV Winding → Near Core**
+
+**HV Winding → Outside LV**
+
+**OLTC → Changes taps under load**
+
+**Bushings → Carry conductors through tank**
+
+**Transformer Oil → Cooling + Insulation**
+
+**Conservator → Stores excess oil**
+
+**CTC → Reduces eddy current losses**
+
+**Three-Phase Transformer → High-power applications**
